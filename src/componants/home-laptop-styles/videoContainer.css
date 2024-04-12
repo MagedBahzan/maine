@@ -1,0 +1,13 @@
+@media only screen and (max-width: 1536px) {
+  .vid-container {
+    width: 1280px;
+    height: 649px;
+    margin-top: 80px;
+    border-radius: 10px;
+  }
+  .play-button {
+    width: 34px;
+    height: 34px;
+    font-size: 45px;
+  }
+}

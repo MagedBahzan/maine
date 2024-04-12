@@ -1,0 +1,102 @@
+@media only screen and (max-width: 400px) {
+  .FAQ-section-container {
+    width: 360px;
+    height: auto;
+    margin-top: 40px;
+    display: block;
+    padding: 24px;
+  }
+
+  .FAQ-section-container > div {
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .FAQ-support {
+    width: 90%;
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  .FAQ-support > div:first-child {
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .FAQ-support > div:first-child > p:first-child {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .FAQ-support > div:first-child > p:last-child {
+    font-size: 14px;
+  }
+
+  .FAQ-support > button {
+    width: 130px;
+    height: 50px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .FAQ-support > button:hover {
+    background-color: #f1f1f3;
+  }
+
+  .most-asked-container {
+    width: 90%;
+    height: auto;
+  }
+
+  .most-asked-question-container {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin: 10px 0px;
+  }
+  .most-asked-question-container > div {
+    width: 90%;
+  }
+
+  .most-asked-question-container > div > p:first-child {
+    width: 80%;
+    font-size: 16px;
+  }
+
+  .close-and-open-answer {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+  }
+
+  .different-courses {
+    padding: 0px 10px;
+    border-radius: 6px;
+  }
+
+  .different-courses > p {
+    font-size: 14px !important;
+    font-weight: bold;
+  }
+
+  .arrew-for-different-courses {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .most-asked-question-container-active {
+    height: auto !important;
+  }
+
+  .most-asked-question-container-active > div:first-child {
+    height: 75px;
+  }
+
+  .answer-container > p {
+    font-size: 14px !important;
+    margin: 20px 0px;
+    width: 100% !important;
+  }
+}
