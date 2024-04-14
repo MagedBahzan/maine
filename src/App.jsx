@@ -36,6 +36,8 @@ function App() {
             <Route path="FAQ" element={<FAQsection />} />
             <Route path="Skillbridge-login" element={<LoginPage />} />
             <Route path="Skillbridge-Sign-Up" element={<SignUpPage />} />
+            <Route path="/Terms-of-Use" element={<h1>Terms of Use Page</h1>} />
+            <Route path="/Privacy-Policy" element={<h1>Privacy Policy Page</h1>} />
           </Route>
         </Routes>
       </BrowserRouter>

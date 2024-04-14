@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { faX } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { NavLink } from "react-router-dom";
 
 function FAQsection() {
   const questionsData = [
@@ -98,9 +99,9 @@ function FAQsection() {
         {ele.open ? (
           <div className="different-courses">
             <p>Enrollment Process for Different Courses</p>
-            <div className="arrew-for-different-courses cursor-pointer">
+            <NavLink to="/courses" className="arrew-for-different-courses cursor-pointer">
               <FontAwesomeIcon icon={faArrowRight} />
-            </div>
+            </NavLink>
           </div>
         ) : null}
       </div>

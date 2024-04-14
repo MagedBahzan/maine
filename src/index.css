@@ -39,7 +39,8 @@ a:hover {
 }
 .home,
 .Courses-page,
-.course-detailes-page {
+.course-detailes-page,
+.login-page {
   width: 1920px;
   display: flex;
   flex-direction: column;
@@ -49,14 +50,16 @@ a:hover {
 @media only screen and (max-width: 1535px) {
   .home,
   .Courses-page,
-  .course-detailes-page {
+  .course-detailes-page,
+  .login-page {
     width: 1400px;
   }
 }
 @media only screen and (max-width: 400px) {
   .home,
   .Courses-page,
-  .course-detailes-page {
+  .course-detailes-page,
+  .login-page {
     width: 390px;
   }
 }
