@@ -9,8 +9,26 @@ import TestimonialsSection from "./componants/home-componants/TestimonialsSectio
 import VideoContainer from "./componants/home-componants/videoContiner";
 
 function Home() {
+      const [theApiData, setTheApiData] = React.useState({}); 
+      React.useEffect(
+          function loadDoc() {
+              const xhttp = new XMLHttpRequest();
+              xhttp.onload = function () {
+                  setTheApiData(this.responseText);
+              };
+              xhttp.open("GET", "http://127.0.0.1:8000/api/v1/main/news", true);
+              xhttp.send();
+          },
+          []
+      );   
+      console.log(theApiData);
   return (
     <div className="home">
+{/* <div className="joks--contaner">
+              {<pre>{JSON.stringify(theApiData, null, 2)}</pre>}
+              <p>{count}</p>
+              <button onClick={numCount}>Clic for Counting</button>
+          </div> */}
       <HeroSection />
       <Ads />
       <VideoContainer src="https://b9.icdn.ru/m/maged-bahzan/4/79020034iyP.jpg" />
