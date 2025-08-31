@@ -5,6 +5,7 @@ import "../home-laptop-styles/heroSection.css";
 import "../home-phone-styles/heroSection.css";
 
 function HeroSection(props) {
+  const doc = props.data
   return (
     <div className="hero-section">
       <div className="hero-top-heading-container">
@@ -33,7 +34,7 @@ function HeroSection(props) {
           </p>
         </div>
         <div>
-          <p>with Online Design and Development Courses.{props.title.title}</p>
+          <p>with Online Design and Development Courses.{doc.title}</p>
           <p>Learn from Industry Experts and Enhance Your Skills.</p>
         </div>
       </div>

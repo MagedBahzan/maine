@@ -14,7 +14,7 @@ function Home() {
           function loadDoc() {
               const xhttp = new XMLHttpRequest();
               xhttp.onload = function () {
-                  setTheApiData(JSON.parse(this.responseText).data.allDocs[0]);
+                  setTheApiData(JSON.parse(this.responseText).data);
               };
               xhttp.open("GET", "http://127.0.0.1:8000/api/v1/main/news", true);
               xhttp.send();
@@ -29,7 +29,7 @@ function Home() {
               <p>{count}</p>
               <button onClick={numCount}>Clic for Counting</button>
           </div> */}
-      <HeroSection title={theApiData} />
+      <HeroSection data={theApiData} />
       <Ads />
       <VideoContainer src="https://b9.icdn.ru/m/maged-bahzan/4/790j20034iyP.jpg" />
       <BenefitsSection />
