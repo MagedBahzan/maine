@@ -4,7 +4,7 @@ import "../home-desktop-styles/heroSection.css";
 import "../home-laptop-styles/heroSection.css";
 import "../home-phone-styles/heroSection.css";
 
-function HeroSection() {
+function HeroSection(props) {
   return (
     <div className="hero-section">
       <div className="hero-top-heading-container">
@@ -33,7 +33,7 @@ function HeroSection() {
           </p>
         </div>
         <div>
-          <p>with Online Design and Development Courses.</p>
+          <p>with Online Design and Development Courses.{props.title.title}</p>
           <p>Learn from Industry Experts and Enhance Your Skills.</p>
         </div>
       </div>
